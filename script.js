@@ -36,10 +36,10 @@ function renderScene(scene) {
     choicesElement.innerHTML = ""; // Clear old choices
 
     scene.choices.forEach(choice => {
-        const button = document.createElement("button");
-        button.textContent = choice.text;
-        button.onclick = () => renderScene(story[choice.next]);
-        choicesElement.appendChild(button);
+        const span = document.createElement("span");
+        span.textContent = choice.text;
+        span.onclick = () => renderScene(story[choice.next]);
+        choicesElement.appendChild(span);
     });
 }
 
