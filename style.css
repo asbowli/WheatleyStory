@@ -7,7 +7,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
 }
 
 #game {
@@ -18,16 +18,30 @@ body {
 #story {
     margin-bottom: 20px;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 2;
 }
 
 #choices span {
     display: block;
-    margin: 10px 0;
+    font-size: 20px;
+    margin: 50px 0;
     text-decoration: underline;
     cursor: pointer;
+    color: yellow
 }
 
 #choices span:hover {
+    font-weight: bold;
+}
+
+#minigame {
+    background: black;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid white;
+}
+
+.quote {
+    color: #ef63ed;
     font-weight: bold;
 }
